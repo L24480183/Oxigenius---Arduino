@@ -7,7 +7,8 @@ void setup() {
 
 void loop() {
   JsonDocument doc;
-  doc["airQ"] = analogRead(A0); //avg value under "normal" conditions: 43-45; max when exposed to CO2 (breathing): 63;
+  //insert analog values from sensors into JSON doc
+  doc["airQ"] = analogRead(A0); 
   doc["ph"] = analogRead(A1);
   doc["temp"] = analogRead(A2);
   
