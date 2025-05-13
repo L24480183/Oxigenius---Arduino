@@ -2,7 +2,7 @@
 
 void setup() {
   Serial.begin(9600); //baud rate: 9600
-  delay(30000); //30s warmup time
+  delay(60000); //60s warmup time
 }
 
 void loop() {
